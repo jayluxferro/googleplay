@@ -1,0 +1,8 @@
+ignore
+ignore.go
+ignore.json
+ignore.txt
+/.idea
+/vendor
+cmd/googleplay/googleplay
+/tmp
