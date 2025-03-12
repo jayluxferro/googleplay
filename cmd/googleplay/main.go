@@ -66,7 +66,7 @@ func main() {
 				// Do a purchase before doing a delivery
 				err := head.Purchase(f.app)
 				if err != nil {
-					panic(err)
+					// panic(err)
 				}
 
 				err = f.do_delivery(head, platform, f.single)
