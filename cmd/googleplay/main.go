@@ -64,10 +64,7 @@ func main() {
 			}
 			if f.version >= 1 {
 				// Do a purchase before doing a delivery
-				err := head.Purchase(f.app)
-				if err != nil {
-					// panic(err)
-				}
+				head.Purchase(f.app)
 
 				err = f.do_delivery(head, platform, f.single)
 				if err != nil {
