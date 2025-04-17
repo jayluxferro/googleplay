@@ -179,10 +179,12 @@ func (h Header) Set_Auth(head http.Header) {
 }
 
 func (h Header) Set_Device(head http.Header) error {
-	id, err := h.Device.ID()
+	/*id, err := h.Device.ID()
 	if err != nil {
 		return err
 	}
 	head.Set("X-DFE-Device-ID", strconv.FormatUint(id, 16))
+	*/
+	head.Set("X-DFE-Device-ID", "1")
 	return nil
 }
